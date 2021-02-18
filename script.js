@@ -1,6 +1,8 @@
 "use strict";
 
-init();
+window.addEventListener("DOMContentLoaded",init);
+
+let index = 3; 
 
 function init() {
   // set up the eventlistener
@@ -25,6 +27,7 @@ function selectColor(color) {
   const baseColor = rgb2HSL(hex2RGB(color));
 //calculate Harmony
   calculateHarmony(baseColor);
+  displayColorInfo(color, index);
 }
 
 // called from the eventlistener
@@ -49,7 +52,7 @@ function rgb2Hex(rgbObject) {
   const hexB = rgbObject.b.toString(16).padStart(2, "0");
 
   const hex = "#" + hexR + hexG + hexB;
-
+  console(hex);
   return hex;
 }
 
@@ -63,7 +66,9 @@ function hex2RGB(color, index) {
   r = parseInt(r, 16);
   g = parseInt(g, 16);
   b = parseInt(b, 16);
-
+//
+console.log(`RGB: ${r}, ${g}, ${b}`);
+//
   return { r, g, b };
 }
 
@@ -108,6 +113,9 @@ function rgb2HSL(rgbObject) {
   h = h.toFixed(0);
   s = s.toFixed(0);
   l = l.toFixed(0);
+  //
+  console.log("hsl(%f,%f%,%f%)", h, s, l);
+  //
 
   return { h, s, l };
 }
@@ -132,7 +140,7 @@ function showHslColor(hsl, index) {
 
 function showColorBox(rgb, index) {
   document.querySelector(
-    `#colorinfo${index} .colorbox3`
+    `#colorinfo${index} .colorbox`
   ).style.backgroundColor = `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`;
 }
 
