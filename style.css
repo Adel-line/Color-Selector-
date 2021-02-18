@@ -1,0 +1,36 @@
+#harmonies {
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+}
+
+#colors {
+  display: flex;
+  gap: 1em;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: small;
+}
+
+.colorbox {
+  border: 1px solid gray;
+  border-radius: 1em;
+  width: 10vw;
+  height: 10vw;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+}
+
+#holder {
+  display: flex;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+#color {
+  margin-left: 80px;
+}
