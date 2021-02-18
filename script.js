@@ -195,7 +195,7 @@ function showColorBox(rgb, index) {
 
 function calculateHarmony(baseColor) {
   console.log("Time for fun");
-  const harmony = document.getElementsByName("harmony").value;
+  const harmony = document.querySelector("#harmony").value;
   //onclick event
   //document.querySelector("harmony").addEventListener("click", value);
 
@@ -252,7 +252,7 @@ function showAnalogColors(baseColor) {
   //
   hsl2RGB(analog_a, "a");
   hsl2RGB(analog_b, "b");
-  hsl2RGB(hslObject, "c");
+  hsl2RGB(baseColor, "c");
   hsl2RGB(analog_d, "d");
   hsl2RGB(analog_e, "e");
 }

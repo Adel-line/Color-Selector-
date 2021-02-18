@@ -10,54 +10,55 @@
   <body>
     <main>
       <div id="holder">
-      <div id="harmonies">
-        <label><input type="radio" name="harmony" value="analogous">Analogous</label>
-        <label><input type="radio" name="harmony" value="monochromatic">Monochromatic</label>
-        <label><input type="radio" name="harmony" value="triad">Triad</label>
-        <label><input type="radio" name="harmony" value="complementary">Complementary</label>
-        <label><input type="radio" name="harmony" value="compound">Compound</label>
-        <label><input type="radio" name="harmony" value="shades">Shades</label>
+        <div id="harmonies">
+          <label>Color harmony</label>
+          <select name="harmony" id="harmony">
+            <option value="analogous">Analogous</option>
+            <option value="monochromatic">Monochromatic</option>
+            <option value="triad">Triad</option>
+            <option value="complementary">Complementary</option>
+            <option value="compound">Compound</option>
+            <option value="shades">Shades</option>
+          </select>
+          <div id=holder2>
+            Pick the basecolor:
+            <input type="color" id="colorpicker" />
+          </div>
+          </label>
+        </div>
       </div>
-    <div id= "color">
-      <label>
-        Pick the basecolor:
-        <input type="color" id="colorpicker">
-      </label>
-    </div>
-    </div>
       <div id="colors">
-      <div id="colorinfo1">
-        <div class="colorbox"></div>
-        <div class="hex">hex: <span class="value"></span></div>
-        <div class="rgb">rgb: <span class="value"></span></div>
-        <div class="hsl">hsl: <span class="value"></span></div>
+        <div id="colorinfo1">
+          <div class="colorbox"></div>
+          <div class="hex">hex: <span class="value"></span></div>
+          <div class="rgb">rgb: <span class="value"></span></div>
+          <div class="hsl">hsl: <span class="value"></span></div>
+        </div>
+        <div id="colorinfo2">
+          <div class="colorbox"></div>
+          <div class="hex">hex: <span class="value"></span></div>
+          <div class="rgb">rgb: <span class="value"></span></div>
+          <div class="hsl">hsl: <span class="value"></span></div>
+        </div>
+        <div id="colorinfo3">
+          <div class="colorbox"></div>
+          <div class="hex">hex: <span class="value"></span></div>
+          <div class="rgb">rgb: <span class="value"></span></div>
+          <div class="hsl">hsl: <span class="value"></span></div>
+        </div>
+        <div id="colorinfo4">
+          <div class="colorbox"></div>
+          <div class="hex">hex: <span class="value"></span></div>
+          <div class="rgb">rgb: <span class="value"></span></div>
+          <div class="hsl">hsl: <span class="value"></span></div>
+        </div>
+        <div id="colorinfo5">
+          <div class="colorbox"></div>
+          <div class="hex">hex: <span class="value"></span></div>
+          <div class="rgb">rgb: <span class="value"></span></div>
+          <div class="hsl">hsl: <span class="value"></span></div>
+        </div>
       </div>
-      <div id="colorinfo2">
-        <div class="colorbox"></div>
-        <div class="hex">hex: <span class="value"></span></div>
-        <div class="rgb">rgb: <span class="value"></span></div>
-        <div class="hsl">hsl: <span class="value"></span></div>
-      </div>
-      <div id="colorinfo3">
-        <div class="colorbox"></div>
-        <div class="hex">hex: <span class="value"></span></div>
-        <div class="rgb">rgb: <span class="value"></span></div>
-        <div class="hsl">hsl: <span class="value"></span></div>
-      </div>
-      <div id="colorinfo4">
-        <div class="colorbox"></div>
-        <div class="hex">hex: <span class="value"></span></div>
-        <div class="rgb">rgb: <span class="value"></span></div>
-        <div class="hsl">hsl: <span class="value"></span></div>
-      </div>
-      <div id="colorinfo5">
-        <div class="colorbox"></div>
-        <div class="hex">hex: <span class="value"></span></div>
-        <div class="rgb">rgb: <span class="value"></span></div>
-        <div class="hsl">hsl: <span class="value"></span></div>
-      </div>
-    </div>
-    
     </main>
 
     <script src="script.js"></script>
